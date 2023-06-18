@@ -64,6 +64,10 @@ public class Marcet {
      * @return
      */
     public String printDraw(){
+        List<Integer> drawIndivid = givIndividList();
+        timeSignificance(drawIndivid);
+        appropriateProbability(drawIndivid);
+        aldSignificance();
         StringBuilder res = new StringBuilder();
         for (Game item: draw) {
             res.append(item);
